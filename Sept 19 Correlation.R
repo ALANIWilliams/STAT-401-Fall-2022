@@ -6,7 +6,7 @@ library("ggpubr")
 my_data <- mtcars
 head(my_data)
 
-ggscatter(my_data, x = "gear", y = "disp", add = "reg.line", conf.int = TRUE, cor.coef = TRUE, cor.method = "pearson", xlab = "Gear", ylab = "Disp")
+ggscatter(my_data, x = "gear", y = "disp", add = "reg.line", conf.int = TRUE, cor.coef = TRUE, cor.method = "pearson", xlab = "Gear", ylab = "Disp (mi) ")
 
 res <- cor.test(my_data$disp, my_data$gear, method = "pearson") 
 res
